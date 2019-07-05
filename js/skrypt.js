@@ -1,2 +1,3 @@
-(function(){
-}());
+function obrazek(){
+    alert();
+}
