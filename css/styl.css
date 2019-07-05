@@ -18,11 +18,12 @@ html,body{
     height:100%;
     font-family:'sans1','sans2',sans-serif;
     font-weight: normal;
+    overflow-x: hidden;
 }
 *{
     box-sizing: border-box;
 }
-#div1,#div3 {
+#div1,#div3,#spacer {
     background-image:url('../img/zdjecie1.png'); 
     background-color: #cccccc; 
     height: 100%; 
@@ -30,9 +31,13 @@ html,body{
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
+    width:100%;
   }
   #div3{
     background-image:url('../img/zdjecie2.png'); 
+  }
+  #spacer{
+    background-image:url('../img/spacer1skalowane.jpg'); 
   }
   .stopka{
       text-align: center;
@@ -41,10 +46,15 @@ html,body{
   }
   div p{
       color:grey;
-      font-size:16px;
+      font-size:14px;
+      line-height: 20px;
   }
   .stopka p{
       padding:20px;
       margin:0;
       font-size:12px;
+  }
+  .obr{
+      display:inline-block;
+      width:100%;
   }
