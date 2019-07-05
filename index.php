@@ -10,7 +10,17 @@
 
 <body>
     <div class='container col-md-12' id="div1"></div>
-    <div class='container col-md-12' id="div2"></div>
+    
+    <div class='container col-md-12' id="div2">
+        <div class='container col-md-6 mx-auto'>
+            <div class='head mt-5' align='center'>Informacje o Nas</div>
+            <p align='center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+
+
+    </div>
     <div class='container col-md-12' id="div3"></div>
     <div class='container-fluid stopka'><p>Copyright 2019 - Michał Bazan & Eplee</p></div>
     <script src="js/skrypt.js"></script>
@@ -20,3 +30,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
