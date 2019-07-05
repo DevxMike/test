@@ -9,10 +9,10 @@
     </head>
 
 <body>
-    <div class='container-fluid' id="div1">
-           
-    </div>
-
+    <div class='container col-md-12' id="div1"></div>
+    <div class='container col-md-12' id="div2"></div>
+    <div class='container col-md-12' id="div3"></div>
+    <div class='container-fluid stopka'><p>Copyright 2019 - Michał Bazan & Eplee</p></div>
     <script src="js/skrypt.js"></script>
     <!--skrypty bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

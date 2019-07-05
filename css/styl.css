@@ -6,7 +6,7 @@ html,body{
 *{
     box-sizing: border-box;
 }
-#div1 {
+#div1,#div3 {
     background-image:url('../img/zdjecie1.png'); 
     background-color: #cccccc; 
     height: 100%; 
@@ -14,4 +14,17 @@ html,body{
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
+  }
+  #div3{
+    background-image:url('../img/zdjecie2.png'); 
+  }
+  .stopka{
+      text-align: center;
+      color: #636260;
+      background-color: #292928; 
+  }
+  .stopka p{
+      padding:20px;
+      margin:0;
+      font-size:12px;
   }
