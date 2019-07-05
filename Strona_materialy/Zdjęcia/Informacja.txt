@@ -1,0 +1,2 @@
+- Zdjêcia 1 i 2 posiadaj¹ ju¿ cieñ który jest dodany w projekcie
+- Niektóre zdjêcia nie s¹ przyciête ani przeskalowane wiêc musisz zrobiæ to sam
