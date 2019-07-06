@@ -109,12 +109,43 @@ html,body{
       border-radius: 100%;
       display: inline-block;
   }
-  .kom,.lokal{
+  .kom{
     background:url('../img/telefon.png');
-    background-size:40%;
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .mail{
+    background:url('../img/email.png');
+    background-size:50%;
     background-repeat: no-repeat;
     background-position: center;
   }
   .lokal{
     background:url('../img/lokalizacja.png');
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+  .godzina{
+    background:url('../img/godzina.png');
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .insta{
+    background:url('../img/instagram.png');
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .facebook{
+    background:url('../img/facebook.png');
+    background-size:30%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .marginesLinki{
+      margin-bottom: 10px;
+  }
+  
