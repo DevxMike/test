@@ -80,6 +80,10 @@ html,body{
   .white{
       color:white;
   }
+  .white:hover{
+      color:white;
+      text-decoration: none;
+  }
   .link{
       font-size:16px;
   }
@@ -91,4 +95,26 @@ html,body{
   }
   .big{
       width:240px;
+  }
+  .kontaktNad{
+      display: flex;
+      align-items:center;
+  }
+  .kontakt{
+      width:40px;
+      height:40px;
+      background:#ffbb68 center center;
+      background-repeat: no-repeat;
+      background-size:50%;
+      border-radius: 100%;
+      display: inline-block;
+  }
+  .kom,.lokal{
+    background:url('../img/telefon.png');
+    background-size:40%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .lokal{
+    background:url('../img/lokalizacja.png');
   }
