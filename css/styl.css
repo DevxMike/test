@@ -46,7 +46,7 @@ html,body{
   .stopka{
       text-align: center;
       color: #636260;
-      background-color: #292928; 
+      background-color: #1b2438; 
       clear:both;
   }
   div p{
@@ -153,4 +153,14 @@ html,body{
   }
   .marginesMapa{
       margin-top:9px;
+  }
+  @media only screen and (max-width: 768px) {
+    #div3 {
+      height:1200px;
+    }
+  }
+  @media only screen and (min-width: 769px) {
+    #div3 {
+      height:900px;
+    }
   }
