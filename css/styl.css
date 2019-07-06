@@ -69,7 +69,7 @@ html,body{
       font-size:12px;
       font-family: 'sansBold';
       width:140px;
-      height:45px;
+      height:50px;
   }
   #insta .head{
       margin-top:300px;
@@ -95,6 +95,7 @@ html,body{
   }
   .big{
       width:240px;
+      height:60px;
   }
   .kontaktNad{
       display: flex;
@@ -109,44 +110,25 @@ html,body{
       border-radius: 100%;
       display: inline-block;
   }
-  .kom{
-    background:url('../img/telefon.png');
-    background-size:50%;
-    background-repeat: no-repeat;
-    background-position: center;
+
+  .ikona1{
+    width:40px;
+      height:40px;
+      position:relative;
+      background:#ffbb68 center center;
+      background-repeat: no-repeat;
+      border-radius: 100%;
+      display: inline-block;
   }
-  .mail{
-    background:url('../img/email.png');
-    background-size:50%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .lokal{
-    background:url('../img/lokalizacja.png');
-    background-size:50%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .godzina{
-    background:url('../img/godzina.png');
-    background-size:50%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .insta{
-    background:url('../img/instagram.png');
-    background-size:50%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .facebook{
-    background:url('../img/facebook.png');
-    background-size:30%;
-    background-repeat: no-repeat;
-    background-position: center;
+  .ikona2 img{
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:10px;
+    left:10px;
   }
   .marginesLinki{
-      margin-bottom: 10px;
+      margin-bottom: 20px;
   }
   .marginesTrzeciaSekcja{
       margin-top:208px;
