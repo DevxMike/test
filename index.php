@@ -19,27 +19,28 @@
                 <p align='center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                 laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-        <div class='row mx-auto col-sm-8 mt-5 mb-5'>
-            <div class='col-sm-4 mt-2'><img class='obr img-fluid'  src='img/info1skalowane.png' alt='pic1'></div>
-            <div class='col-sm-4 mt-5 mb-3'><img class='obr img-fluid'  src='img/info2skalowane.png' alt='pic2'></div>
-            <div class='col-sm-4 mt-2'><img class='obr img-fluid'  src='img/info3skalowane.png' alt='pic3'></div>
+			
+			<div class='row mx-auto col-sm-8 mt-5 mb-4'>
+				<div class='col-sm-4 mt-2'><img class='obr img-fluid'  src='img/info1skalowane.png' alt='pic1'></div>
+				<div class='col-sm-4 mt-5 mb-3'><img class='obr img-fluid'  src='img/info2skalowane.png' alt='pic2'></div>
+				<div class='col-sm-4 mt-2'><img class='obr img-fluid'  src='img/info3skalowane.png' alt='pic3'></div>
             </div>
-        <div class='row mx-auto col-sm-8 mt-3 mb-5'>
-                <div class='container-fluid col-sm-5 mt-5 ml-3' id='spacer'>
-                    <img class='obr img-fluid mx-auto my-auto' src='img/strzalka.png' alt='spacer'>
+			
+			<div class='row mx-auto col-sm-8 mb-5'>
+                <div class='container col-sm-5 mt-5' id='spacer'>
+                    <img src='img/spacer1merged.jpg' class='img-fluid'>
                 </div>
-            <div class='col-sm-6'>
-            <div class='head mt-5' align='left'>Spacer wirtualny</div>
-            <p align='left' >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p></div>
-        </div>
-
-        <div class='col-sm-8 mx-auto'><div class='head mt-5 ml-2' align='left'>Zdjęcia z Instagram</div></div>
-
-    
-    
-    
-    </div>     
+				<div class='col-sm-7 mt-3' id='tekst'>
+					<div class='head ml-5 mt-3' align='left'>Spacer wirtualny</div>
+						<p align='left' class='ml-5' >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					<input type='button' value='POWIĘKSZ' class='button ml-5 mt-0' onclick='powieksz()'/>
+				</div>
+			</div>
+			<div class='col-sm-8 mx-auto mt-5'>
+				<div class='head mt-0 ml-3' align='left'>Zdjęcia z Instagram</div>
+			</div>
+		</div>     
     </div>
     <div class='container col-md-12' id="div3"></div>
     <div class='container-fluid stopka'><p>Copyright 2019 - Michał Bazan & Eplee</p></div>

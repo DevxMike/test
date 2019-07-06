@@ -1,3 +1,6 @@
 function obrazek(){
     
 }
+function powieksz(){
+    
+}
