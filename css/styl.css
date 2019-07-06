@@ -37,6 +37,7 @@ html,body{
   }
   #div3{
     background-image:url('../img/zdjecie2.png'); 
+    height:950px;
   }
   #spacer{
     width:100%;
@@ -46,6 +47,7 @@ html,body{
       text-align: center;
       color: #636260;
       background-color: #292928; 
+      clear:both;
   }
   div p{
       color:grey;
@@ -61,7 +63,7 @@ html,body{
       width:100%;
   }
   .button{
-      background-color: #ffa54a;
+      background-color: #ffbb68;
       color:white;
       border:none;
       font-size:12px;
@@ -71,4 +73,22 @@ html,body{
   }
   #insta .head{
       margin-top:300px;
+  }
+  .margines{
+      margin-top:70px;
+  }
+  .white{
+      color:white;
+  }
+  .link{
+      font-size:16px;
+  }
+  .left{
+      text-align: left;
+  }
+  .center{
+      text-align: center;
+  }
+  .big{
+      width:240px;
   }

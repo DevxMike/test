@@ -1,6 +1,6 @@
-function obrazek(){
-    
-}
 function powieksz(){
     
+}
+function napisz(){
+   
 }
