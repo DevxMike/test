@@ -37,7 +37,7 @@ html,body{
   }
   #div3{
     background-image:url('../img/zdjecie2.png'); 
-    height:950px;
+    height:1000px;
   }
   #spacer{
     width:100%;
@@ -148,4 +148,9 @@ html,body{
   .marginesLinki{
       margin-bottom: 10px;
   }
-  
+  .marginesTrzeciaSekcja{
+      margin-top:208px;
+  }
+  .marginesMapa{
+      margin-top:9px;
+  }
