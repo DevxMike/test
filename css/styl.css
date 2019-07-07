@@ -6,6 +6,7 @@
     font-family: 'titleFont',sans-serif;
     font-size: 50px;
 }
+
 @font-face {
     font-family: 'sans1';
     src: url('../font/REFSAN.TTF');
@@ -25,16 +26,23 @@ html,body{
 *{
     box-sizing: border-box;
 }
+#div1{
+    transform: translateY(-40px);
+}
 #div1,#div3{
     background-image:url('../img/bg/zdjecie1.png'); 
     background-color: #cccccc; 
-    height: 100%; 
+    height: 1000px; 
     display:block;
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
     width:100%;
   }
+  .boldInfo{
+    font-family: 'sansBold';
+    color:#ffc163;
+}
   #div3{
     background-image:url('../img/bg/zdjecie2.png'); 
     height:1000px;
@@ -63,7 +71,7 @@ html,body{
       width:100%;
   }
   .button{
-      background-color: #ffbb68;
+      background-color: #ffc163;
       color:white;
       border:none;
       font-size:12px;
@@ -101,21 +109,11 @@ html,body{
       display: flex;
       align-items:center;
   }
-  .kontakt{
-      width:40px;
-      height:40px;
-      background:#ffbb68 center center;
-      background-repeat: no-repeat;
-      background-size:50%;
-      border-radius: 100%;
-      display: inline-block;
-  }
-
   .ikona1{
     width:40px;
       height:40px;
       position:relative;
-      background:#ffbb68 center center;
+      background:#ffc163 center center;
       background-repeat: no-repeat;
       border-radius: 100%;
       display: inline-block;
@@ -130,6 +128,14 @@ html,body{
     background-repeat:no-repeat;
     top:10px;
     left:10px;
+  }
+  .logo{
+    width:343px;
+    height:347px;
+    background-image:url('../img/logo.png');
+    background-size:contain;
+    background-position: center;
+    background-repeat:no-repeat;
   }
   .mail{
     background-image:url('../img/ikony/email.png');
@@ -180,3 +186,4 @@ html,body{
         width:100%;
     }
   }
+  
