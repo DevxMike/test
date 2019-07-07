@@ -79,9 +79,6 @@ html,body{
       width:140px;
       height:50px;
   }
-  #insta .head{
-      margin-top:300px;
-  }
   .margines{
       margin-top:70px;
   }
@@ -192,4 +189,17 @@ html,body{
     .logo{
       width:100%;
     }
+  }
+
+  .msg{
+    position:fixed;
+    top:25%;
+    left:50%;
+    transform: translate(-50%);
+    padding:10px;
+	  background:white;
+  	width:45%;
+  	align-items:center;
+    display:none;
+    border-radius: 10px;
   }

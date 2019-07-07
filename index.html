@@ -18,7 +18,7 @@
         <div class='row'>
             <div class='container col-md-12' id="div2">
                 <div class='container col-md-5 mx-auto'>
-                <div class='head mt-5 center'>Informacje o Nas</div>
+                <div class='head mt-3 center'>Informacje o Nas</div>
                 <p class='center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                 laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -29,7 +29,7 @@
 				<div class='col-md-4 mt-2'><img class='obr img-fluid'  src='img/zdjecia/info3skalowane.png' alt='pic3'></div>
             </div>
 			
-			<div class='row mx-auto col-md-10 mb-5'>
+			<div class='row mx-auto col-md-10 mb-5 mt-5'>
                 <div class='container col-md-5 mt-5' id='spacer'>
                     <img src='img/zdjecia/spacer1merged.jpg' class='img-fluid'>
                 </div>
@@ -41,20 +41,21 @@
 				</div>
 			</div>
 			<div class='col-md-10 mx-auto margines'>
-				<div class='head mt-5 ml-3 left' >Zdjęcia z Instagram</div>
+                <div class='head mt-5 ml-3 left' >Zdjęcia z Instagram</div>
+                
 			</div>
 		</div>     
     </div>
                 <!-- ----------------------------SEKCJA TRZECIA---------------------------- -->
     <div class='container-fluid col-md-12' id="div3">
         <div class='row col-md-10 mx-auto '>
-                <div class='row col-md-12 mx-auto'><div class='white head marginesTrzeciaSekcja'>Kontakt</div></div>
+                <div class='row col-md-12 mx-auto'><div class='white head marginesTrzeciaSekcja' id='kontakt'>Kontakt</div></div>
         
             <div class='col-md-6 float-left'>
                 
                     <div class='left mt-3 ml-4'>
                         <a href='tel:123 500 123' class='link white '><div class='kontaktNad marginesLinki'><div class='ikona1 mr-3'><div class='tel'></div></div>123 500 123</div></a>
-                        <div class='kontaktNad white marginesLinki'><div class='ikona1 mr-3'><div class='mail'></div></div>kontak@azsieuszytrzesa.pl</div>
+                        <div class='kontaktNad white marginesLinki' onclick='napisz()'><div class='ikona1 mr-3'><div class='mail'></div></div>kontak@azsieuszytrzesa.pl</div>
                         <a href='https://www.google.com/maps?ll=49.990875,19.941609&z=14&t=m&hl=en-US&gl=PL&mapclient=embed&q=Szybisko+40+32-020+Krak%C3%B3w' class='link white '><div class='kontaktNad marginesLinki'><div class='ikona1 mr-3'><div class='adres'></div></div>ul. Szybisko 40, Kraków (Szwoszowice)</div></a>
                         <div class='kontaktNad white marginesLinki'><div class='ikona1 mr-3'><div class='godzina'></div></div>Poniedziałek-Niedziela: 10:00 - 22:00</div>
                         <a href='www.instagram.com/azsieuszytrzesa' class='link white '><div class='kontaktNad marginesLinki'><div class='mr-3 ikona1'><div class='instagram'></div></div>/azsieuszytrzesa</div></a>
@@ -71,6 +72,18 @@
     </div>
                 <!-- ----------------------------SEKCJA STOPKI---------------------------- -->
     <div class='container-fluid stopka'><p>Copyright 2019 - Michał Bazan & Eplee</p></div>
+                <!-- -----------------------------POPUP---------------------------- -->
+    <div class='msg' id='msg'>
+            <a href="" class="close" data-dismiss="alert" onclick='zamknij()' aria-label="close">×</a>
+            <form action='#kontakt' method='POST'>
+                <div class='head'>Napisz</div>
+                <label for='email'>Wpisz swój adres e-mail:&nbsp;<span style='color:red;'>*</span></label>
+                <input class='form-control' type='text' placeholder="Adres e-mail" name='email' id='email'/>
+                <label for='wiadomosc' class='mt-3'>Wpisz treść wiadomości:&nbsp;<span style='color:red;'>*</span></label>
+                <textarea cols='70' id='wiadomosc' name='wiadomosc' class='form-control' placeholder="Treść wiadomości"></textarea>
+                <div class='col-md-3 mx-auto mt-5'><input type='button' class='form-control' value="Prześlij" onclick ='walidacja()'/></div>
+            </form>
+    </div>
     <script src="js/skrypt.js"></script>
     <!--skrypty bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
