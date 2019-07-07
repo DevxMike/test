@@ -136,6 +136,8 @@ html,body{
     background-size:contain;
     background-position: center;
     background-repeat:no-repeat;
+    position:relative;
+    top:220px;
   }
   .mail{
     background-image:url('../img/ikony/email.png');
@@ -186,4 +188,8 @@ html,body{
         width:100%;
     }
   }
-  
+  @media only screen and (max-width:405px){
+    .logo{
+      width:100%;
+    }
+  }
