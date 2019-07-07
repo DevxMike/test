@@ -26,7 +26,7 @@ html,body{
     box-sizing: border-box;
 }
 #div1,#div3{
-    background-image:url('../img/zdjecie1.png'); 
+    background-image:url('../img/bg/zdjecie1.png'); 
     background-color: #cccccc; 
     height: 100%; 
     display:block;
@@ -36,7 +36,7 @@ html,body{
     width:100%;
   }
   #div3{
-    background-image:url('../img/zdjecie2.png'); 
+    background-image:url('../img/bg/zdjecie2.png'); 
     height:1000px;
   }
   #spacer{
@@ -120,13 +120,34 @@ html,body{
       border-radius: 100%;
       display: inline-block;
   }
-  .ikona2 img{
+  .tel,.instagram,.mail,.adres,.godzina,.facebook{
     width:20px;
     height:20px;
+    background-image:url('../img/ikony/telefon.png');
     position:absolute;
+    background-size:100%;
+    background-position: center;
+    background-repeat:no-repeat;
     top:10px;
     left:10px;
   }
+  .mail{
+    background-image:url('../img/ikony/email.png');
+  }
+  .adres{
+    background-image:url('../img/ikony/lokalizacja.png');
+    background-size:70%;
+  }
+  .godzina{
+    background-image:url('../img/ikony/godzina.png');
+  }
+  .instagram{
+    background-image:url('../img/ikony/instagram.png');
+  }
+  .facebook{
+    background-image:url('../img/ikony/facebook.png');
+    background-size: 45%;
+}
   .marginesLinki{
       margin-bottom: 20px;
   }
@@ -140,9 +161,22 @@ html,body{
     #div3 {
       height:1200px;
     }
+    #mapa{
+        height:300px;
+    }
   }
   @media only screen and (min-width: 769px) {
     #div3 {
-      height:900px;
+      height:950px;
+    }
+    #mapa{
+        height:500px;
+        width:70%;
+        float:right;
+    }
+  }
+  @media only screen and (min-width: 863px) {
+    #mapa{
+        width:100%;
     }
   }
