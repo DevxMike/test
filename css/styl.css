@@ -91,6 +91,7 @@ html,body{
   }
   .link{
       font-size:16px;
+      text-decoration: none;
   }
   .left{
       text-align: left;
@@ -115,7 +116,17 @@ html,body{
       border-radius: 100%;
       display: inline-block;
   }
-  .tel,.instagram,.mail,.adres,.godzina,.facebook{
+  .ikona2{
+    width:60px;
+      height:60px;
+      position:relative;
+      background:#ffc163 center center;
+      background-repeat: no-repeat;
+      border-radius: 100%;
+      display: block;
+      align-items: center;
+  }
+  .tel,.instagram,.mail,.adres,.godzina,.facebook,.menu,.newsfeed{
     width:20px;
     height:20px;
     background-image:url('../img/ikony/telefon.png');
@@ -126,6 +137,17 @@ html,body{
     top:10px;
     left:10px;
   }
+  .menu,.newsfeed{
+    background-image: url('../img/ikony/restaurant-interface-symbol-of-fork-and-knife-couple.png');
+    width:30px;
+    height:30px;
+    top:15px;
+    left:13px;
+  }
+  .newsfeed{
+    background-image: url('../img/ikony/bullhorn.png');
+    left:15px;
+  }
   .logo{
     width:343px;
     height:347px;
@@ -135,6 +157,10 @@ html,body{
     background-repeat:no-repeat;
     position:relative;
     top:220px;
+  }
+  .pozycjaIkon{
+    position:absolute;
+    top:50px;
   }
   .info1{
     position: relative;
@@ -221,4 +247,12 @@ html,body{
   .sanBold{
     font-family:"sansBold"; 
     color:#ffc163;
+  }
+  #flex{
+    display:flex;
+    width:100%;
+    height:100%;
+  }
+  .right{
+    text-align: right;
   }
