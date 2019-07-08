@@ -4,12 +4,15 @@
         <meta charset="utf-8">
         <link href="css/styl.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--js i css galeria zdjec-->
+        <script src='js/lightbox-plus-jquery.min.js'></script>
+        <link rel='stylesheet' href='css/lightbox.min.css'>
         <!--css botstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Home page</title>
     </head>
 
-<body>
+<body >
                 <!-- ----------------------------SEKCJA PIERWSZA---------------------------- -->
     <div class='container-fluid col-md-12 ' id="div1">
         <div class='logo mx-auto mb-5'></div>
@@ -27,31 +30,28 @@
                 laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
 			
-			<div class='row mx-auto col-md-10 mt-5 mb-4'>
-				<div class='col-md-4 mt-2'><img class='obr img-fluid'  src='img/zdjecia/info1skalowane.png' alt='pic1'></div>
-				<div class='col-md-4 mt-5 mb-3'><img class='obr img-fluid'  src='img/zdjecia/info2skalowane.png' alt='pic2'></div>
-				<div class='col-md-4 mt-2'><img class='obr img-fluid'  src='img/zdjecia/info3skalowane.png' alt='pic3'></div>
+			<div class='row mx-auto col-md-10 mt-5 mb-4 gallery' rel='lightbox[zdj]'>
+				<div class='col-md-4 mt-2'><a href='img/zdjecia/info1.png' data-title='Zdjęcie na zewnątrz' data-lightbox="mygallery"><img class='obr img-fluid'  src='img/zdjecia/info1.png' alt='pic1'></a></div>
+				<div class='col-md-4 mt-5 mb-3'><a href='img/zdjecia/info2.png'  data-title='Zdjęcie mebli' data-lightbox="mygallery"><img class='obr img-fluid'  src='img/zdjecia/info2.png' alt='pic2'></a></div>
+				<div class='col-md-4 mt-2'><a a href='img/zdjecia/info3.png'  data-title='Restauracja' data-lightbox="mygallery"><img class='obr img-fluid'  src='img/zdjecia/info3.png' alt='pic3'></a></div>
             </div>
 			
 			<div class='row mx-auto col-md-10 mb-5 mt-5'>
-                <div class='container col-md-5 mt-5' id='spacer'>
-                    <img src='img/zdjecia/spacer1merged.jpg' class='img-fluid'>
+                <div class='container col-md-5 mt-5 gallery' id='spacer'>
+                        <img src='img/zdjecia/spacer1merged.jpg' class='img-fluid'>
                 </div>
 				<div class='col-md-7 mt-3 my-auto' id='tekst'>
 					<div class='head ml-5 mt-3 left' >Spacer wirtualny</div>
 						<p class='ml-5 left' >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-					<input type='button' value='POWIĘKSZ' class='button ml-5 mt-0' onclick='powieksz()'/>
+                        </p>
+                        <a data-title='Spacer wirtualny' data-lightbox="mygallery" style='text-decoration:none;'href='img/zdjecia/spacer1merged.jpg'>
+					<input type='button' value='POWIĘKSZ' class='button ml-5 mt-0' onclick='powieksz()'/></a>
 				</div>
 			</div>
 			<div class='col-md-10 mx-auto margines'>
                 <div class='head mt-5 ml-3 left' >Zdjęcia z Instagram</div>
 			</div>
         </div>
-    </div>
-
-
-
                 <!-- ----------------------------SEKCJA TRZECIA---------------------------- -->
     <div class='container-fluid col-md-12' id="div3">
         <div class='row col-md-10 mx-auto '>
@@ -89,12 +89,6 @@
                 <textarea cols='70' id='wiadomosc' name='wiadomosc' class='form-control' placeholder="Treść wiadomości"></textarea>
                 <div class='col-md-3 mx-auto mt-5'><input type='button' class='form-control' value="Prześlij" onclick ='walidacja()'/></div>
             </form>
-    </div>
-                <!-- -----------------------------POPUP---------------------------- -->
-    <div class='galeria mx-auto' id='gal'>
-            <a href="" class="close" data-dismiss="alert" onclick='zamknij()' aria-label="close">×</a>
-            <img class='img-fluid mt-2' id='ramka' src=''>
-            <p class='center' id='opis'></p>
     </div>
     <script src="js/skrypt.js"></script>
     <!--skrypty bootstrap-->
