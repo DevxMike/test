@@ -256,3 +256,9 @@ html,body{
   .right{
     text-align: right;
   }
+  .slide{
+    float:left;
+    width:16%;
+    margin:0 0.3% 80px;
+    transition:0.5s;
+  }
