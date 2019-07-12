@@ -104,7 +104,6 @@ html,body{
       border:none;
       font-size:12px;
       font-family: 'sansBold',sans-serif;
-      font-weight: 900;
       width:140px;
       height:50px;
       padding:16px;
@@ -247,8 +246,7 @@ html,body{
     border-radius: 10px;
   }
   .sanBold{
-    font-family:"sansBold",sans-serif;
-    font-weight: 900; 
+    font-family:"sansBold",sans-serif; 
     color:#ffc163;
   }
   #flex{
