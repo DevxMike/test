@@ -260,3 +260,6 @@ html,body{
   .button:hover{
     cursor: pointer;
   }
+  .b{
+    width: 220px;
+  }
