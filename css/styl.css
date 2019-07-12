@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'titleFont';
+  src: url(../font/Amatic-Bold.ttf);
+  font-family: 'sans1';
+  src: url(../font/REFSAN.TTF);
+  font-family: 'sans2';
+  src: url(../font/micross.ttf);
+  font-family: 'sansBold';
+  src: url(../font/REFSANB.TTF);
+  font-weight: normal;
+  font-style: normal;
+}
 html,body{
   margin:0;
   width:100%;
@@ -32,22 +44,12 @@ html,body{
     width:100%;
   }
 }
-
-@font-face {
-  font-family: 'titleFont';
-  src: url(../font/Amatic-Bold.ttf);
-  font-family: 'sans1';
-  src: url(../font/REFSAN.TTF);
-  font-family: 'sans2';
-  src: url(../font/micross.ttf);
-  font-family: 'sansBold';
-  src: url(../font/REFSANB.TTF);
-}
-
 .head{
-    font-family: 'titleFont',sans-serif;
-    font-size: 50px;
+  font-family: "titleFont",sans-serif;
+  font-size: 50px;
 }
+
+
 #div1,#div3{
     background-image:url('../img/bg/zdjecie1.png'); 
     background-color: #cccccc; 
@@ -97,7 +99,8 @@ html,body{
       color:white;
       border:none;
       font-size:12px;
-      font-family: 'sansBold';
+      font-family: 'sansBold',sans-serif;
+      font-weight: 900;
       width:140px;
       height:50px;
       padding:16px;
@@ -240,7 +243,8 @@ html,body{
     border-radius: 10px;
   }
   .sanBold{
-    font-family:"sansBold"; 
+    font-family:"sansBold",sans-serif;
+    font-weight: 900; 
     color:#ffc163;
   }
   #flex{
@@ -261,5 +265,5 @@ html,body{
     cursor: pointer;
   }
   .b{
-    width: 220px;
+    width: 240px;
   }
