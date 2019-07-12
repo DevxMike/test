@@ -1,15 +1,3 @@
-@font-face {
-  font-family: 'titleFont';
-  src: url(../font/Amatic-Bold.ttf);
-  font-family: 'sans1';
-  src: url(../font/REFSAN.TTF);
-  font-family: 'sans2';
-  src: url(../font/micross.ttf);
-  font-family: 'sansBold';
-  src: url(../font/REFSANB.TTF);
-  font-weight: normal;
-  font-style: normal;
-}
 html,body{
   margin:0;
   width:100%;
@@ -17,6 +5,22 @@ html,body{
   font-family:'sans1','sans2',sans-serif;
   font-weight: normal;
   overflow-x: hidden;
+}
+@font-face {
+  font-family: 'titleFont';
+  src: url('../font/Amatic-Bold.ttf');
+}
+@font-face{
+  font-family: 'sans1';
+  src: url('../font/REFSAN.TTF');
+}
+@font-face{
+  font-family: 'sans2';
+  src: url('../font/micross.ttf');
+}
+@font-face{
+  font-family: 'sansBold';
+  src: url('../font/REFSANB.TTF');
 }
 *{
   box-sizing: border-box;
