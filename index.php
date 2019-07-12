@@ -181,7 +181,7 @@
                                         <!--POPUP-->
                                         <div class='msg' id='msg'
                                         ><a href="#" class="close" >×</a>
-                                            <form action='index.php?action=send' method='POST'>
+                                            <form action='send.php' method='POST'>
                                                 <div class='head'>Napisz</div>
                                                 <label for='email'>Wpisz swój adres e-mail:&nbsp;
                                                     <span style='color:red;'>*</span>
@@ -195,11 +195,6 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <?php
-                                            if(isset($_GET['action'])){
-                                                require('php/send.php');
-                                            }
-                                        ?>
                                     <script src="js/skrypt.js"></script>
                                     <script src='js/lightbox-plus-jquery.min.js'></script>
                                     <script type="text/javascript" src="js/slick.min.js"></script>
