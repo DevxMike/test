@@ -100,6 +100,7 @@ html,body{
       font-family: 'sansBold';
       width:140px;
       height:50px;
+      padding:16px;
   }
   .margines{
       margin-top:70px;
@@ -120,10 +121,6 @@ html,body{
   }
   .center{
       text-align: center;
-  }
-  .big{
-      width:240px;
-      height:60px;
   }
   .kontaktNad{
       display: flex;
@@ -259,4 +256,7 @@ html,body{
     margin:0 0.3% 80px;
     float:left;
     display: block;
+  }
+  .button:hover{
+    cursor: pointer;
   }
