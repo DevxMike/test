@@ -128,7 +128,7 @@
                                                                 </div>123 500 123
                                                             </div>
                                                         </a>
-                                                        <div class='kontaktNad white marginesLinki' id='napisz1'>
+                                                        <div class='kontaktNad white marginesLinki napisz'>
                                                             <div class='ikona1 mr-3'>
                                                                 <div class='mail'></div>
                                                             </div>kontakt@azsieuszytrzesa.pl
@@ -160,7 +160,7 @@
                                                             </div>
                                                         </a>
                                                         <div class='col-md-8 mx-auto'>
-                                                            <div class='button mt-5 mb-3 center b'  id='napisz'>NAPISZ DO NAS</div>
+                                                            <div class='button mt-5 mb-3 center b napisz'>NAPISZ DO NAS</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -181,29 +181,35 @@
                                         <!--POPUP-->
                                         <div class='msg' id='msg'
                                         ><a href="#" class="close" >×</a>
-                                            <form action='send.php' method='POST'>
+                                            <form action='send.php' method='post' id='form'>
                                                 <div class='head'>Napisz</div>
                                                 <label for='email'>Wpisz swój adres e-mail:&nbsp;
-                                                    <span style='color:red;'>*</span>
+                                                <span style='color:red;'>*</span>
                                                 </label>
-                                                <input class='form-control' type='text' placeholder="Adres e-mail" name='email' id='email'>
+                                                <input class='form-control' type='text' placeholder="Adres e-mail" name='email' id='email'/>
+                                                <div id='errmsg1'></div>
                                                 <label for='wiadomosc' class='mt-3'>Wpisz treść wiadomości:&nbsp;<span style='color:red;'>*</span>
                                                 </label>
                                                 <textarea cols='70' id='wiadomosc' name='wiadomosc' class='form-control' placeholder="Treść wiadomości"></textarea>
+                                                <div id='errmsg2'></div>
                                                 <div class='col-md-3 mx-auto mt-5'>
-                                                    <input type='button' class='form-control' id='button' value="Prześlij"/>
+                                                    <input type='submit' class='form-control' id='button' value="Prześlij"/>
                                                 </div>
                                             </form>
                                         </div>
-                                    <script src="js/skrypt.js"></script>
-                                    <script src='js/lightbox-plus-jquery.min.js'></script>
-                                    <script type="text/javascript" src="js/slick.min.js"></script>
-                                    <script>
+                                        <script
+                                        src="http://code.jquery.com/jquery-3.4.1.min.js"
+                                        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                                        crossorigin="anonymous"></script>
+                                        <script src="js/skrypt.js"></script>
+                                        <script src='js/lightbox-plus-jquery.min.js'></script>
+                                        <script type="text/javascript" src="js/slick.min.js"></script>
+                                        <script>
                                         $('.slider').slick({
                                         slidesToShow: 5,
                                         slidesToScroll: 1,
                                         autoplay: true,
-                                        autoplaySpeed: 2000,
+                                        autoplaySpeed: 1500,
                                       });</script>
                                     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
                                     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

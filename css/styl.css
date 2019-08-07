@@ -269,3 +269,7 @@ html,body{
   .b{
     width: 240px;
   }
+  #errmsg1,#errmsg2{
+    font-size:11px;
+    color:black;
+  }

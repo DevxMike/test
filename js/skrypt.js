@@ -1,55 +1,60 @@
-function napisz(){
-    var msg = document.getElementById('msg');
-    msg.style.display = 'block';
- }
- 
- var button = document.getElementById('napisz');
- button.addEventListener('click',napisz,false);
- 
- var button1 = document.getElementById('napisz1');
- button1.addEventListener('click',napisz,false);
- 
- function zamknij(){
-     var msg = document.getElementById('msg');
-     msg.style.display = 'none';
- }
- 
- var button2 = document.getElementById('msg').firstChild;
- button2.addEventListener('click',zamknij,false);
- 
- function waliduj(){
-     var mailExp = /^[0-9a-zA-Z-_.]{1,}@[0-9a-zAZ-_.]{1,}\.[a-zAZ]{2,}$/;
-     var email = document.getElementById('email');
-     var txt = document.getElementById('wiadomosc');
-     if(mailExp.test(email.value)&&txt.value!='')
-         document.forms[0].submit();
- }
- var klik = document.getElementById('button');
- klik.addEventListener('click',waliduj,false);
- 
- function isEmailNull(){
-     var mailExp = /^[0-9a-zA-Z-_.]{1,}@[0-9a-zAZ-_.]{1,}\.[a-zAZ]{2,}$/;
-     var email = document.getElementById('email');
-     if(!mailExp.test(email.value)){
-        email.style='border:1px solid red; border-radius:5px;';
-     }
-     else{
-        email.style='border:1px solid green; border-radius:5px;';
-     }
- }
+$(document).ready(function(){
+   
+   $('.napisz').on('click', function() {
+      $('#msg').css('display', 'block');
+   });
 
- function isTxtNull(){
-    var txt = document.getElementById('wiadomosc');
-    if(txt.value==''){
-       txt.style='border:1px solid red; border-radius:5px;';
-    }
-    else{
-       txt.style='border:1px solid green; border-radius:5px;';
-    }
-}
- 
- var email = document.getElementById('email');
- var txt = document.getElementById('wiadomosc');
- 
- email.addEventListener('blur',isEmailNull,false);
- txt.addEventListener('blur',isTxtNull,false);
+   $('.close').on('click', function(){
+      $('#msg').css('display', 'none');
+   });
+   
+   
+   function ok($obj, $div){
+      $div.text('');
+      $obj.css({'border':'1px solid green','border-radius':'5px'});
+   }
+   
+   function bad($obj, $div, msg){
+      $obj.css({'border':'1px solid red','border-radius':'5px'});
+      $div.text(msg);
+   }
+
+   $('#email').on('blur', function(){
+      var $this = $(this);
+      var mailExp = /^[0-9a-zA-Z-_.]{1,}@[0-9a-zAZ-_.]{1,}\.[a-zAZ]{2,}$/;
+
+      mailExp.test($this.val()) === false ? bad($this, $('#errmsg1'), 'Wpisz poprawny adres email'):ok($this, $('#errmsg1'));
+   });
+
+   $('#wiadomosc').on('blur', function(e){
+      var $this = $(this);
+      
+      $this.val() == '' ? bad($this, $('#errmsg2'), 'Wpisz poprawną treść wiadomości'):ok($this, $('#errmsg2'));
+   });
+
+   $('#form').on('submit', function(e){
+      e.preventDefault();
+      var mailExp = /^[0-9a-zA-Z-_.]{1,}@[0-9a-zAZ-_.]{1,}\.[a-zAZ]{2,}$/;
+      var mail = $('#email').val();
+      var txt = $('#wiadomosc').val();
+
+         if(mailExp.test(mail) && txt!=''){
+            var details = $(this).serialize();
+            $.post('send.php', details)
+               .done(function(data){
+                  $('#errmsg2').html('<span style="color:green;">'+data+'</span>');
+               })
+               .fail(function(){
+                  $('#errmsg2').html('<span style="color:red;">Nie udało się wysłać wiadomości!</span>');
+               });
+         }
+         
+         else{
+            
+            mailExp.test(mail) === false ? bad($('#email'), $('#errmsg1'), 'Wpisz poprawny adres email'):ok($('#email'), $('#errmsg1'));
+            txt == '' ? bad($('#wiadomosc'), $('#errmsg2'), 'Wpisz poprawną treść wiadomości'):ok($('#wiadomosc'), $('#errmsg2'));
+         
+         }
+   });
+
+});
