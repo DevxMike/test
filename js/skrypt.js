@@ -40,7 +40,7 @@ $(document).ready(function(){
 
          if(mailExp.test(mail) && txt!=''){
             var details = $(this).serialize();
-            $.post('send.php', details)
+            $.post('../send.php', details)
                .done(function(data){
                   $('#errmsg2').html('<span style="color:green;">'+data+'</span>');
                })
